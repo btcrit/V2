@@ -14,10 +14,9 @@ header{
     background-image: url("../images/bg-geometric.jpg");
     background-size: cover;
     background-position: center;
-    padding: 4rem 2rem;
+    padding: 4rem 0rem;
     text-align: center;
     color: white;
-
 }
 @media only screen and (max-width: 750px) {
     header{
@@ -73,8 +72,6 @@ header .button{
 }
 nav{
     background-color: #1e1e1e;
-    position: sticky;
-    top: 0;
     z-index: 2;
 }
 nav .notwide{
@@ -100,7 +97,7 @@ nav a:hover{
 }
 #nextmeeting{
     position: relative;
-    margin: 2rem;
+    /* margin: 2rem; */
     box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
 }
 #nextmeeting .bg{
@@ -118,9 +115,11 @@ nav a:hover{
 #nextmeeting .content{
     color: white;
     background-color: rgba(221, 124, 16, 0.9);
-    padding: 4rem 0;
+    padding: 4rem 1rem;
 }
 #nextmeeting .button{
     margin-top: 2rem;
     margin-left: 0;
+    font-size: 1.25rem;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
 }
