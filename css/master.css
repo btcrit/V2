@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    /*Default Font*/
+    font-family: 'Open sans', sans-serif;
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+}
+header{
+    position: sticky;
+    top: 0;
+    background-image: url("../images/bg-geometric.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: white;
+
+}
+@media only screen and (max-width: 750px) {
+    header{
+        position: static;
+    }
+
+}
+header img{
+    display: block;
+    text-align: center;
+    margin: 2rem auto;
+    margin-top: 0px;
+}
+header h1{
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+header hr{
+    border: 0;
+    width: 30rem;
+    max-width: 50%;
+    height: 1px;
+    background-color: white;
+}
+header p{
+    margin-top: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+}
+header .button{
+    font-size: 1.25em;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.flexboi{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#curtain{
+    /*height: 1000px;*/
+    z-index: 1;
+    position: relative;
+    background-color: #fafafa;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
+}
+.notwide{
+    max-width: 800px;
+    margin: 0 auto;
+}
+nav{
+    background-color: #1e1e1e;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+nav .notwide{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+nav a{
+    display: inline-block;
+    margin: 1rem;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px solid #1e1e1e;
+    transition: border-bottom 0.1s;
+}
+nav a.active{
+    color: #DD7C10;
+    border-bottom: 1px solid #DD7C10;
+}
+nav a:hover{
+    border-bottom: 1px solid #FFF;
+}
+#nextmeeting{
+    position: relative;
+    margin: 2rem;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
+}
+#nextmeeting .bg{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("../images/bg-aud.jpg");
+    background-size: cover;
+    background-position: center;
+    /* overflow: hidden; */
+    /* box-sizing: border-box; */
+}
+#nextmeeting .content{
+    color: white;
+    background-color: rgba(221, 124, 16, 0.9);
+    padding: 4rem 0;
+}
+#nextmeeting .button{
+    margin-top: 2rem;
+    margin-left: 0;
+}

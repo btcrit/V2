@@ -1,0 +1,37 @@
+.button {
+  margin: 1rem;
+  padding: 1rem 2rem;
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.25s ease, background-color 0.25s ease;
+  letter-spacing: 0.5px;
+}
+.b_accent {
+  border: 0.15em solid #DD7C10;
+  background-color: #FBFBFB;
+  color: #DD7C10;
+}
+.b_accent:hover {
+  background-color: #DD7C10;
+  color: #FBFBFB;
+}
+.b_base {
+  border: 0.15em solid #10668B;
+  background-color: #FBFBFB;
+  color: #10668B;
+}
+.b_base:hover {
+  background-color: #10668B;
+  color: #FBFBFB;
+}
+.b_dark {
+  border: 0.15em solid #1e1e1e;
+  background-color: #FBFBFB;
+  color: #1e1e1e;
+}
+.b_dark:hover {
+  background-color: #1e1e1e;
+  color: #FBFBFB;
+}
