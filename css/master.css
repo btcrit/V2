@@ -31,7 +31,7 @@ header img{
     margin-top: 0px;
 }
 header h1{
-    font-size: 3rem;
+    font-size: 4rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
@@ -47,7 +47,7 @@ header hr{
 header p{
     margin-top: 1rem;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
 }
 header .button{
     font-size: 1.25em;
@@ -72,14 +72,14 @@ header .button{
 }
 nav{
     background-color: #1e1e1e;
+    position: relative;
     z-index: 2;
-}
-nav .notwide{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+
 nav a{
     display: inline-block;
     margin: 1rem;
@@ -115,11 +115,49 @@ nav a:hover{
 #nextmeeting .content{
     color: white;
     background-color: rgba(221, 124, 16, 0.9);
-    padding: 4rem 1rem;
+    padding: 1rem 1rem;
+}
+#nextmeeting .pc{
+    border: 1px solid white;
+    padding: 0rem 5rem;
+    margin-left: -5rem;
+    max-width: 75%;
+}
+p{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin: 2rem 0;
 }
 #nextmeeting .button{
     margin-top: 2rem;
     margin-left: 0;
     font-size: 1.25rem;
     box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+}
+#about{
+    padding: 4rem 1rem;
+    color: #1e1e1e;
+}
+#about h1{
+    color: #10668b;
+    //
+    border-bottom: 1px solid #10668b;
+    margin-bottom: 2rem;
+}
+#about hr{
+    height: 1px;
+    border: none;
+    background-color: #10668b;
+    width: 75%;
+    /* margin: -1rem auto; */
+}
+a{
+    color: #10668B;
+    border-bottom: 1px solid #dd7c10;
+    text-decoration: none;
+}
+#contact{
+    background-color: #10668b;
+    color: white;
+    overflow: auto;
 }
