@@ -1,0 +1,72 @@
+// Generic things that can be re-used accross pages.
+// Buttons are in a separate file.
+
+// Probably won't use this, but the reference attribute means I don't have to worry.
+@import (reference) "colors";
+
+// Breakpoint
+// use with @media @breakpoint {}
+@breakpoint: ~"only screen and (max-width: 600px)";
+
+
+
+// ~~~~~ Mixins ~~~~~
+
+.font_hella(){
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+// Standard Box Shadow, so many things have this.
+.box_shadow(){
+    box-shadow: 0px 0px 16px 0px fade(@color_dark, 10%);
+}
+.box_shadow_strong(){
+    box-shadow: 0px 0px 16px 0px fade(@color_dark, 20%);
+}
+
+// ~~~~~ Elements ~~~~~~
+
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: @color_lightgray;
+}
+h1{
+    .font_hella();
+    font-size: 3rem;
+    margin: 2rem 0;
+    @media @breakpoint{
+        font-size: 2rem;
+    }
+}
+hr{
+    border: none;
+    height: 1px;
+    margin: -1rem auto;
+}
+p{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin: 2rem 0;
+}
+.flexboi{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.notwide{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+}
+main{
+    padding: 0 1rem;
+}

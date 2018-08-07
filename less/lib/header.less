@@ -1,0 +1,26 @@
+// Generic Header for all pages except for Home.
+
+// Colors and flexboi and such.
+@import (reference) "mixins";
+
+header{
+    // Display
+    .flex();
+    justify-content: center;
+    // Positioning
+    padding: 0.5rem 1rem;
+    // Style
+    background-image: url("../../images/bg-geometric.jpg");
+    background-position: center;
+    background-size: cover;
+    // Children
+    img{
+        margin: 0.5rem 1rem;
+        width: 4rem;
+    }
+    h1{
+        margin: 0.5rem 1rem;
+        color: white;
+        text-align: center;
+    }
+}

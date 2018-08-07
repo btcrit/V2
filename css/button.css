@@ -1,4 +1,4 @@
-.button {
+.button, button {
   margin: 1rem;
   padding: 1rem 2rem;
   display: inline-block;
@@ -7,6 +7,7 @@
   text-decoration: none;
   transition: color 0.25s ease, background-color 0.25s ease;
   letter-spacing: 0.5px;
+  border-radius: 0.3em;
 }
 .b_accent {
   border: 0.15em solid #DD7C10;

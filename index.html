@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
-        <meta charset="utf-8">
-        <title>BTCRIT</title>
-        <!-- Load Stylesheets -->
-        <link rel="stylesheet" href="./css/master.css">
-        <link rel="stylesheet" href="./css/button.css">
-        <!-- Load Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i|Roboto:400,700" rel="stylesheet">
-        <!-- For Mobile Users -->
+        <!-- M E T A -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="
+            We're a club at RIT that focuses on Blockchain Technology and other
+            Decentralized Systems. We have weekly meetings, discuss bitcoin and
+            other cryptocurrencies, and work on projects in our free time.
+        ">
+        <!-- Load Resources -->
+        <link rel="stylesheet" href="/style.css">
+        <!-- <link rel="stylesheet" href="./css/button.css"> -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i|Roboto:400,700" rel="stylesheet">
+        <!-- Other Things -->
+        <title>BTCRIT | Home</title>
     </head>
     <body>
+        <!-- Big, Static Header. -->
         <header>
             <!-- Logo -->
             <img src="./images/hamster.svg" alt="">
@@ -24,24 +30,23 @@
             <p>
                 <em>Decentralized Systems: Education and Implementation</em>
             </p>
-            <div class="flexboi">
-                <a href="#" class="button b_accent">
-                    Join our Mailing List
-                </a>
-                <a href="#" class="button b_accent">
-                    Current Meeting Sign-in
-                </a>
-            </div>
+            <!-- Aparently no wrapper is needed here -->
+            <a href="#contact" class="button b_accent">
+                Get Involved / Contact
+            </a>
+            <a href="/signin" class="button b_accent">
+                Current Meeting Sign-in
+            </a>
         </header>
-        <!-- Curtain -->
-        <div id="curtain">
-            <!-- Nav Bar -->
+        <!-- Curtain pulls up over the header -->
+        <main>
+            <!-- Nav Bar, for Nav-ing. -->
             <nav>
-                <a href="#" class="active">Home</a>
-                <a href="#">Meetings</a>
-                <a href="#">E-Board</a>
-                <a href="#">Club Resume</a>
-                <a href="#">Local Crypto</a>
+                <a href="/" class="active">Home</a>
+                <a href="/meetings/">Meetings</a>
+                <a href="/eboard">E-Board</a>
+                <a href="/resume">Club Resume</a>
+                <a href="/local/">Local Crypto</a>
             </nav>
             <!-- Next Meeting -->
             <section id="nextmeeting">
@@ -66,44 +71,79 @@
                                  <b>Difficulty:</b> Walking down a Ramp.
                             </p>
                         </div>
-                        <a href="#" class="button b_dark">Here? Sign In!</a>
-                        <a href="#" class="button b_base">Other Meetings</a>
+                        <a href="/signin" class="button b_dark">Here? Sign In!</a>
+                        <a href="/meetings" class="button b_base">Other Meetings</a>
                     </div>
                 </div>
             </section>
             <!-- About the Club -->
             <section id="about">
                 <div class="notwide">
-                    <h1>What is BTCRIT?</h1>
-                    <hr>
-                    <p>
-                        We are a club at RIT focused on Blockchain Technology
-                        and other Decentralized systems.
-                    </p>
-                    <p>
-                        In our weekly meetings we'll discuss news from the
-                        Crypto-currency space, projects our members are working
-                        on, and occasionally hear from guest speakers.
-                    </p>
-                    <p>
-                        To see what we've been up to, check out the
-                        <a href="#">Meetings</a>
-                        page for past meetings or the
-                        <a href="#">Club Resume</a>
-                        page for our projects.
-                    </p>
+                    <div class="floaty">
+                        <h1>What is BTCRIT?</h1>
+                        <hr>
+                        <p>
+                            We are a club at RIT focused on Blockchain Technology
+                            and other Decentralized systems.
+                        </p>
+                        <p>
+                            In our weekly meetings we'll discuss news from the
+                            Crypto-currency space, projects our members are working
+                            on, and occasionally hear from guest speakers.
+                        </p>
+                        <p>
+                            To see what we've been up to, check out the
+                            <a href="/meetings">Meetings</a>
+                            page for past meetings or the
+                            <a href="/resume">Club Resume</a>
+                            page for our projects.
+                        </p>
+                    </div>
                 </div>
             </section>
             <!-- Contact us -->
             <section id="contact">
-                <div class="notwide">
-                    <h1>Get Involved!</h1>
+                <div class="bg"></div>
+                <div class="content">
+                    <div class="notwide">
+                        <a name="contact" class="magic"></a>
+                        <h1>Get Involved!</h1>
+                        <hr>
+                        <!-- Join the mailing list -->
+                        <p>
+                            Our Emails are informative and entertaining. We'll send
+                            one per week with relevant news and info on our next
+                            meeting. You can unsubscribe anytime; what's the downside?
+                        </p>
+                        <!-- Email Form -->
+                        <!-- TODO FIXME WARNING BUG make this work. -->
+                        <form class="email" action="index.html" method="post">
+                            <input type="text" name="email" placeholder="abc1234@rit.edu">
+                            <button type="submit" name="submit" class="b_accent">Subscribe</button>
+                        </form>
+                        <!-- Send Us an Email -->
+                        <p>
+                            If you'd like to send us an email, feel free! We can be
+                            reached at <a href="mailto:btc@rit.edu">btc@rit.edu</a>.
+                        </p>
+                        <!-- Talk to us on Discord -->
+                        <p>
+                            Outside of meetings, we keep in touch via Group texts and
+                            a top-secret Discord server. I'm not about to put my
+                            phone number up here, so I guess the Discord will
+                            have to do.
+                        </p>
+                        <a href="https://discord.gg/7UdvvHB" class="button b_accent">Discord, yo.</a>
+                    </div>
                 </div>
-
             </section>
             <footer>
-
+                <div class="notwide">
+                    <p>
+                        This is the website Footer. I feel very lazy and probably won't spend a lot of time on this.
+                    </p>
+                </div>
             </footer>
-        </div>
+        </main>
     </body>
 </html>

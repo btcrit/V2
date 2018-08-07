@@ -1,0 +1,144 @@
+// Items and styles specific to Index.html
+
+// We'll need all this.
+@import "generics";
+
+// We'll also need this.
+@import "buttons";
+
+// and gimme this too.
+@import "nav";
+
+header{
+    // Positioning Effect
+    position: sticky;
+    top: 0;
+    // Background
+    background-image: url("../images/bg-geometric.jpg");
+    background-size: cover;
+    background-position: center;
+    // Styling
+    padding: 4rem 0rem;
+    text-align: center;
+    color: white;
+    @media @breakpoint{
+        position: static;
+    }
+    img{
+        display: block;
+        text-align: center;
+        margin: 2rem auto;
+        margin-top: 0px;
+    }
+    h1{
+        font-size: 4rem;
+        text-shadow: 0px 0px 8px fade(@color_dark, 10%);
+    }
+    hr{
+        width: 30rem;
+        max-width: 50%;
+        background-color: white;
+    }
+    p{
+        font-size: 1.75rem;
+    }
+    .button{
+        font-size: 1.25em;
+        .box_shadow_strong();
+    }
+}
+#curtain{
+    position: relative;
+    z-index: 1;
+    background-color: @color_lightgray;
+    .box_shadow();
+}
+.content{
+    padding: 1rem 1rem;
+}
+#nextmeeting{
+    position: relative;
+    .box_shadow();
+    .bg{
+        background-image: url("../images/bg-aud.jpg");
+    }
+    .content{
+        color: @color_light;
+        background-color: fade(@color_accent, 90%);
+    }
+    .pc{
+        border: 1px solid @color_light;
+        padding: 0rem 5rem;
+        margin: 2rem 0 2rem -5rem;
+        max-width: 75%;
+    }
+    .button{
+        font-size: 1.25rem;
+        .box_shadow_strong();
+    }
+}
+#about{
+    position: relative;
+    padding: 1rem 1rem;
+    color: @color_dark;
+    background-color: @color_lightgray;
+    .box_shadow_strong();
+    .content();
+    h1{
+        color: @color_base;
+    }
+    hr{
+        width: 75%;
+        background-color: @color_base;
+    }
+    a{
+        color: @color_base;
+        border-bottom: 1px solid @color_accent;
+        text-decoration: none;
+    }
+}
+#contact{
+    color: white;
+    overflow: auto; // ??
+    position: relative;
+    .bg{
+        background-image: url("../images/bg-swoosh.jpg");
+    }
+    .content{
+        background-color: fade(@color_base, 80%);
+    }
+    hr{
+        width: 75%;
+        background-color: @color_light;
+    }
+    a:not(.button){
+        color: @color_accent;
+    }
+    form{
+        .flexboi();
+        margin: -1rem 0;
+        input{
+            .button();
+            font-weight: 400;
+            transition: none; // is this more or less overhead?
+            .b_dark();
+            .box_shadow();
+            font-size: 1rem;
+        }
+        input:focus{
+            .box_shadow_strong();
+            outline: none;
+        }
+        button{
+            font-size: 1rem;
+        }
+    }
+}
+footer{
+    background-color: @color_dark;
+    overflow:auto;
+    color: @color_light;
+}
+section a.button{
+    margin-left: 0;
+}

@@ -31,3 +31,13 @@ btcrit.com's website is being built in two phases. Phase one has been completed.
 - Club Wiki
     - Tutorials on setting up nodes
     - General Information
+
+### Structure
+Within each folder, there is:
+- index.html
+- style.css
+- folders for each subpage
+
+images are in the root directory under `images`.
+
+css source code (less) is in the root directory under `less`.

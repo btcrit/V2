@@ -22,7 +22,6 @@ header{
     header{
         position: static;
     }
-
 }
 header img{
     display: block;
@@ -135,14 +134,16 @@ p{
     box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
 }
 #about{
-    padding: 4rem 1rem;
+    position: relative;
+    padding: 1rem 1rem;
     color: #1e1e1e;
+    background-color: rgba(250, 250, 250, 1);
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
 }
 #about h1{
     color: #10668b;
-    //
-    border-bottom: 1px solid #10668b;
     margin-bottom: 2rem;
+    margin-top: 1rem;
 }
 #about hr{
     height: 1px;
@@ -157,7 +158,74 @@ a{
     text-decoration: none;
 }
 #contact{
-    background-color: #10668b;
     color: white;
     overflow: auto;
+    position: relative;
+}
+#contact .bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/bg-swoosh.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+#contact .content{
+    background-color: rgba(16, 102, 139, 0.8);
+    /* overflow: auto; */
+    padding: 2rem 1rem;
+}
+#contact hr{
+    height: 1px;
+    border: none;
+    background-color: #fff;
+    width: 75%;
+}
+#contact a:not(.button){
+    color: #dd7c10;
+}
+
+/* The Email Form*/
+#contact form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -1rem 0;
+}
+#contact form input{
+  margin: 1rem;
+  padding: 1rem 2rem;
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.5px;
+  border-radius: 0.3em;
+  border: 0.15em solid #1e1e1e;
+  background-color: #FBFBFB;
+  color: #1e1e1e;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+}
+#contact form input:focus, input:focus{
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+  outline: none;
+
+}
+#contact form button{font-size: 1rem;}
+#contact a.button{
+  margin-left: 0;
+}
+footer{
+    background-color: #1e1e1e;
+    overflow:auto;
+    color: white;
+}
+@media only screen and (max-width: 750px) {
+  header h1{
+    font-size: 3rem;
+  }
+  h1{
+    font-size: 2rem;
+  }
 }

@@ -1,0 +1,23 @@
+// Mixins
+// Imported as references by other files
+
+@color_base:   #10668B;
+@color_accent: #DD7C10;
+@color_dark:  #1e1e1e;
+@color_darkgray:   #43494D;
+@color_gray:  #E9EBED;
+@color_lightgray:  #FAFAFA;
+@color_light: #FFFFFF;
+// fade(@color_name, [opacity]%)
+
+@breakpoint: ~"only screen and (max-width: 600px)";
+
+.flex(){
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.shadow(@opacity){
+    box-shadow: 0px 0px 16px 0px fade(@color_dark, @opacity);
+}

@@ -1,0 +1,242 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #FAFAFA;
+}
+.button,
+button,
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+h1 {
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin: 2rem 0;
+}
+hr {
+  border: none;
+  height: 1px;
+  margin: -1 auto;
+}
+.notwide {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.button,
+button {
+  margin: 1rem;
+  padding: 1rem 2rem;
+  display: inline-block;
+  transition: color 0.25s ease, background-color 0.25s ease;
+  letter-spacing: 0.5px;
+  border-radius: 0.3em;
+}
+a.button {
+  text-decoration: none;
+}
+.b_accent {
+  border: 0.15em solid #DD7C10;
+  background-color: #FAFAFA;
+  color: #DD7C10;
+}
+.b_accent:hover {
+  background-color: #DD7C10;
+  color: #FAFAFA;
+}
+.b_base {
+  border: 0.15em solid #10668B;
+  background-color: #FAFAFA;
+  color: #10668B;
+}
+.b_base:hover {
+  background-color: #10668B;
+  color: #FAFAFA;
+}
+.b_dark {
+  border: 0.15em solid #1e1e1e;
+  background-color: #FFFFFF;
+  color: #1e1e1e;
+}
+.b_dark:hover {
+  background-color: #1e1e1e;
+  color: #FAFAFA;
+}
+header {
+  position: sticky;
+  top: 0;
+  background-image: url("../images/bg-geometric.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 0rem;
+  text-align: center;
+  color: white;
+}
+@media only screen and (max-width: 600px) {
+  header {
+    position: static;
+  }
+}
+header img {
+  display: block;
+  margin: 0 auto;
+}
+header h1 {
+  font-size: 4rem;
+  text-shadow: 0px 0px 8px rgba(30, 30, 30, 0.1);
+}
+header hr {
+  width: 30rem;
+  max-width: 50%;
+  background-color: #FFFFFF;
+}
+header p {
+  font-size: 1.75rem;
+}
+header a.button {
+  font-size: 1.25em;
+  box-shadow: 0px 0px 16px 0px rgba(30, 30, 30, 0.2);
+}
+main {
+  position: relative;
+  z-index: 1;
+  background-color: #FAFAFA;
+  box-shadow: 0px 0px 16px 0px rgba(30, 30, 30, 0.1);
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #1e1e1e;
+}
+nav a {
+  display: inline-block;
+  margin: 1rem;
+  text-decoration: none;
+  color: #FFFFFF;
+  border-bottom: 1px solid #1e1e1e;
+  transition: border-bottom 0.1s;
+}
+nav a.active {
+  color: #DD7C10;
+  border-bottom: 1px solid #DD7C10;
+}
+nav a:hover {
+  border-bottom: 1px solid #FFFFFF;
+}
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+}
+.content {
+  padding: 1rem;
+}
+#nextmeeting {
+  position: relative;
+  box-shadow: 0px 0px 16px 0px rgba(30, 30, 30, 0.1);
+}
+#nextmeeting .bg {
+  background-image: url("../images/bg-aud.jpg");
+}
+#nextmeeting .content {
+  color: #FFFFFF;
+  background-color: rgba(221, 124, 16, 0.9);
+}
+#nextmeeting .pc {
+  border: 1px solid #FFFFFF;
+  padding: 0rem 5rem;
+  margin: 2rem 0 2rem -5rem;
+  max-width: 75%;
+}
+#nextmeeting .button {
+  font-size: 1.25rem;
+  box-shadow: 0px 0px 16px 0px rgba(30, 30, 30, 0.2);
+}
+#about {
+  position: relative;
+  padding: 1rem;
+  color: #1e1e1e;
+  background-color: #FAFAFA;
+  box-shadow: 0px 0px 16px 0px rgba(30, 30, 30, 0.2);
+}
+#about h1 {
+  color: #10668B;
+}
+#about hr {
+  width: 75%;
+  background-color: #10668B;
+}
+#about a {
+  color: #10668B;
+  border-bottom: 1px solid #DD7C10;
+  text-decoration: none;
+}
+#contact {
+  position: relative;
+  color: white;
+}
+#contact .bg {
+  background-image: url("../images/bg-swoosh.jpg");
+}
+#contact .content {
+  background-color: rgba(16, 102, 139, 0.8);
+}
+#contact hr {
+  width: 75%;
+  background-color: #FFFFFF;
+}
+#contact a:not(.button) {
+  color: #DD7C10;
+}
+#contact form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -1rem 0;
+}
+#contact form input {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  display: inline-block;
+  transition: color 0.25s ease, background-color 0.25s ease;
+  letter-spacing: 0.5px;
+  border-radius: 0.3em;
+  border: 0.15em solid #1e1e1e;
+  background-color: #FFFFFF;
+  color: #1e1e1e;
+  box-shadow: 0px 0px 16px 0px rgba(30, 30, 30, 0.1);
+  font-weight: 400;
+  font-size: 1rem;
+}
+#contact form input:focus {
+  box-shadow: 0px 0px 16px 0px rgba(30, 30, 30, 0.2);
+  outline: none;
+}
+#contact form button {
+  font-size: 1rem;
+}
+footer {
+  background-color: #1e1e1e;
+  color: #FFFFFF;
+  padding: 1rem;
+}
+section a.button {
+  margin-left: 0;
+}

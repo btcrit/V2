@@ -1,0 +1,39 @@
+// Things that need to be included Everywhere
+
+@import (reference) "mixins";
+
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: @color_lightgray;
+}
+
+.button, button, h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+h1{
+    font-size: 3rem;
+    margin: 2rem 0;
+    @media @breakpoint{
+        font-size: 2rem;
+    }
+}
+
+p{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin: 2rem 0;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    margin: -1 auto;
+}
+
+.notwide{
+    max-width: 800px;
+    margin: 0 auto;
+}
