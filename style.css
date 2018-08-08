@@ -90,9 +90,19 @@ header img {
   display: block;
   margin: 0 auto;
 }
+@media only screen and (max-width: 600px) {
+  header img {
+    width: 6rem;
+  }
+}
 header h1 {
   font-size: 4rem;
-  text-shadow: 0px 0px 8px rgba(30, 30, 30, 0.1);
+  text-shadow: 0px 1px 8px rgba(30, 30, 30, 0.2);
+}
+@media only screen and (max-width: 600px) {
+  header h1 {
+    font-size: 3rem;
+  }
 }
 header hr {
   width: 30rem;
@@ -118,10 +128,11 @@ nav {
   flex-wrap: wrap;
   justify-content: space-evenly;
   background-color: #1e1e1e;
+  padding: 0.5rem;
 }
 nav a {
   display: inline-block;
-  margin: 1rem;
+  margin: 0.5rem;
   text-decoration: none;
   color: #FFFFFF;
   border-bottom: 1px solid #1e1e1e;
@@ -150,7 +161,80 @@ nav a:hover {
   box-shadow: 0px 0px 16px 0px rgba(30, 30, 30, 0.1);
 }
 #nextmeeting .bg {
-  background-image: url("../images/bg-aud.jpg");
+  background-image: url("/images/bg-aud/bg-aud-200.jpg");
+  /* Play Stupid Games, Win Stupid Prizes. */
+}
+@media only screen and (min-width: 201px) {
+  #nextmeeting .bg {
+    background-image: url("/images/bg-aud/bg-aud-361.jpg");
+  }
+}
+@media only screen and (min-width: 362px) {
+  #nextmeeting .bg {
+    background-image: url("/images/bg-aud/bg-aud-494.jpg");
+  }
+}
+@media only screen and (min-width: 495px) {
+  #nextmeeting .bg {
+    background-image: url("/images/bg-aud/bg-aud-603.jpg");
+  }
+}
+@media only screen and (min-width: 604px) {
+  #nextmeeting .bg {
+    background-image: url("/images/bg-aud/bg-aud-711.jpg");
+  }
+}
+@media only screen and (min-width: 712px) {
+  #nextmeeting .bg {
+    background-image: url("/images/bg-aud/bg-aud-811.jpg");
+  }
+}
+@media only screen and (min-width: 812px) {
+  #nextmeeting .bg {
+    background-image: url("/images/bg-aud/bg-aud-903.jpg");
+  }
+}
+@media only screen and (min-width: 904px) {
+  #nextmeeting .bg {
+    background-image: url("/images/bg-aud/bg-aud-995.jpg");
+  }
+}
+@media only screen and (min-width: 996px) {
+  #nextmeeting .bg {
+    background-image: url("/images/bg-aud/bg-aud-1090.jpg");
+  }
+}
+@media only screen and (min-width: 1091px) {
+  #nextmeeting .bg {
+    background-image: url("/images/bg-aud/bg-aud-1175.jpg");
+  }
+}
+@media only screen and (min-width: 1176px) {
+  #nextmeeting .bg {
+    background-image: url("/images/bg-aud/bg-aud-1261.jpg");
+  }
+}
+@media only screen and (min-width: 1262px) {
+  #nextmeeting .bg {
+    background-image: url("/images/bg-aud/bg-aud-1343.jpg");
+  }
+}
+@media only screen and (min-width: 1344px) {
+  #nextmeeting .bg {
+    background-image: url("/images/bg-aud/bg-aud-1389.jpg");
+  }
+}
+@media only screen and (min-width: 1390px) {
+  #nextmeeting .bg {
+    background-image: url("/images/bg-aud/bg-aud-1400.jpg");
+  }
+}
+@media only screen and (min-width: 1401px) {
+  #nextmeeting .bg {
+    /* The following image is 3.3MB in size. */
+    /* Don't load this on your data plan. */
+    background-image: url("/images/bg-aud/bg-aud-6000.jpg");
+  }
 }
 #nextmeeting .content {
   color: #FFFFFF;
@@ -190,7 +274,47 @@ nav a:hover {
   color: white;
 }
 #contact .bg {
-  background-image: url("../images/bg-swoosh.jpg");
+  background-image: url("/images/bg-swoosh/bg-swoosh-200.jpg");
+}
+@media only screen and (min-width: 201px) {
+  #contact .bg {
+    background-image: url("/images/bg-swoosh/bg-swoosh-512.jpg");
+  }
+}
+@media only screen and (min-width: 513px) {
+  #contact .bg {
+    background-image: url("/images/bg-swoosh/bg-swoosh-740.jpg");
+  }
+}
+@media only screen and (min-width: 741px) {
+  #contact .bg {
+    background-image: url("/images/bg-swoosh/bg-swoosh-925.jpg");
+  }
+}
+@media only screen and (min-width: 926px) {
+  #contact .bg {
+    background-image: url("/images/bg-swoosh/bg-swoosh-1091.jpg");
+  }
+}
+@media only screen and (min-width: 1092px) {
+  #contact .bg {
+    background-image: url("/images/bg-swoosh/bg-swoosh-1252.jpg");
+  }
+}
+@media only screen and (min-width: 1253px) {
+  #contact .bg {
+    background-image: url("/images/bg-swoosh/bg-swoosh-1394.jpg");
+  }
+}
+@media only screen and (min-width: 1395px) {
+  #contact .bg {
+    background-image: url("/images/bg-swoosh/bg-swoosh-1400.jpg");
+  }
+}
+@media only screen and (min-width: 1401px) {
+  #contact .bg {
+    background-image: url("/images/bg-swoosh/bg-swoosh-1920.jpg");
+  }
 }
 #contact .content {
   background-color: rgba(16, 102, 139, 0.8);

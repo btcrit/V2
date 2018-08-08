@@ -3,6 +3,7 @@
 @import (reference) "../lib/mixins.less";
 @import "../lib/universal.less";
 @import "../lib/buttons.less";
+@import "../lib/backgrounds.less";
 
 header{
     // Positioning Effect
@@ -25,11 +26,18 @@ header{
     img{
         display: block;
         margin: 0 auto;
+        @media @breakpoint{
+            width: 6rem;
+        }
     }
 
     h1{
         font-size: 4rem;
-        text-shadow: 0px 0px 8px fade(@color_dark, 10%);
+        // Yes, that 1px actually makes a large difference.
+        text-shadow: 0px 1px 8px fade(@color_dark, 20%);
+        @media @breakpoint{
+            font-size: 3rem;
+        }
     }
 
     hr{
@@ -77,7 +85,8 @@ main{
     .shadow(10%);
 
     .bg{
-        background-image: url("../images/bg-aud.jpg");
+        // background-image: url("../images/bg-aud.jpg");
+        .bg-aud();
     }
 
     .content{
@@ -126,7 +135,8 @@ main{
     color: white;
 
     .bg{
-        background-image: url("../images/bg-swoosh.jpg");
+        //background-image: url("../images/bg-swoosh.jpg");
+        .bg-swoosh();
     }
 
     .content{

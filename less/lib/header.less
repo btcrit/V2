@@ -7,20 +7,26 @@ header{
     // Display
     .flex();
     justify-content: center;
+    align-items: center;
+
     // Positioning
     padding: 0.5rem 1rem;
+
     // Style
     background-image: url("../../images/bg-geometric.jpg");
     background-position: center;
     background-size: cover;
-    // Children
+
     img{
         margin: 0.5rem 1rem;
         width: 4rem;
     }
+
     h1{
         margin: 0.5rem 1rem;
         color: white;
         text-align: center;
+        // Yes, that 1px actually makes a large difference.
+        text-shadow: 0px 1px 8px fade(@color_dark, 20%);
     }
 }
