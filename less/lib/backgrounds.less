@@ -1,0 +1,81 @@
+// Use media querries to enable responsive background images.
+// AKA: Don't give a mobile user a 3.3MB image.
+
+.bg-swoosh(){
+    background-image: url("/images/bg-swoosh/bg-swoosh-200.jpg");
+    @media only screen and (min-width: 201px) {
+        background-image: url("/images/bg-swoosh/bg-swoosh-512.jpg");
+    }
+    @media only screen and (min-width: 513px) {
+        background-image: url("/images/bg-swoosh/bg-swoosh-740.jpg");
+    }
+    @media only screen and (min-width: 741px) {
+        background-image: url("/images/bg-swoosh/bg-swoosh-925.jpg");
+    }
+    @media only screen and (min-width: 926px) {
+        background-image: url("/images/bg-swoosh/bg-swoosh-1091.jpg");
+    }
+    @media only screen and (min-width: 1092px) {
+        background-image: url("/images/bg-swoosh/bg-swoosh-1252.jpg");
+    }
+    @media only screen and (min-width: 1253px) {
+        background-image: url("/images/bg-swoosh/bg-swoosh-1394.jpg");
+    }
+    @media only screen and (min-width: 1395px) {
+        background-image: url("/images/bg-swoosh/bg-swoosh-1400.jpg");
+    }
+    @media only screen and (min-width: 1401px) {
+        background-image: url("/images/bg-swoosh/bg-swoosh-1920.jpg");
+    }
+}
+
+.bg-aud(){
+    background-image: url("/images/bg-aud/bg-aud-200.jpg");
+    @media only screen and (min-width: 201px) {
+        background-image: url("/images/bg-aud/bg-aud-361.jpg");
+    }
+    @media only screen and (min-width: 362px) {
+        background-image: url("/images/bg-aud/bg-aud-494.jpg");
+    }
+    @media only screen and (min-width: 495px) {
+        background-image: url("/images/bg-aud/bg-aud-603.jpg");
+    }
+    @media only screen and (min-width: 604px) {
+        background-image: url("/images/bg-aud/bg-aud-711.jpg");
+    }
+    @media only screen and (min-width: 712px) {
+        background-image: url("/images/bg-aud/bg-aud-811.jpg");
+    }
+    @media only screen and (min-width: 812px) {
+        background-image: url("/images/bg-aud/bg-aud-903.jpg");
+    }
+    @media only screen and (min-width: 904px) {
+        background-image: url("/images/bg-aud/bg-aud-995.jpg");
+    }
+    @media only screen and (min-width: 996px) {
+        background-image: url("/images/bg-aud/bg-aud-1090.jpg");
+    }
+    @media only screen and (min-width: 1091px) {
+        background-image: url("/images/bg-aud/bg-aud-1175.jpg");
+    }
+    @media only screen and (min-width: 1176px) {
+        background-image: url("/images/bg-aud/bg-aud-1261.jpg");
+    }
+    @media only screen and (min-width: 1262px) {
+        background-image: url("/images/bg-aud/bg-aud-1343.jpg");
+    }
+    @media only screen and (min-width: 1344px) {
+        background-image: url("/images/bg-aud/bg-aud-1389.jpg");
+    }
+    @media only screen and (min-width: 1390px) {
+        background-image: url("/images/bg-aud/bg-aud-1400.jpg");
+    }
+    // If their screen is remarkably large,
+    // serve a remarkably large image.
+    /* Play Stupid Games, Win Stupid Prizes. */
+    @media only screen and (min-width: 1401px) {
+        /* The following image is 3.3MB in size. */
+        /* Don't load this on your data plan. */
+        background-image: url("/images/bg-aud/bg-aud-6000.jpg");
+    }
+}
