@@ -146,3 +146,10 @@ footer p {
   font-size: 1rem;
   margin: 0.5rem 0 0 0;
 }
+h1 {
+  color: #10668B;
+}
+hr {
+  background-color: #10668B;
+  margin: -1rem 1rem;
+}

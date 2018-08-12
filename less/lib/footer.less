@@ -1,0 +1,26 @@
+// Footer
+
+@import (reference) "mixins";
+
+footer{
+    background-color: @color_dark;
+    padding: 0.5rem 0;
+    .flex{
+        .flex();
+        justify-content: space-evenly;
+        padding: 0.25rem;
+        a{
+            color: @color_darkgray;
+            margin: 0.25rem;
+        }
+        #contact{
+            color: @color_gray;
+        }
+    }
+    p{
+        color: @color_gray;
+        text-align:center;
+        font-size: 1rem;
+        margin: 0.5rem 0 0 0;
+    }
+}

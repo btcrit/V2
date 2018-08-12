@@ -4,6 +4,7 @@
 @import "../lib/universal.less";
 @import "../lib/buttons.less";
 @import "../lib/backgrounds.less";
+@import "../lib/footer.less";
 
 header{
     // Positioning Effect
@@ -58,7 +59,7 @@ header{
 main{
     position: relative;
     z-index: 1;
-    background-color: @color_lightgray;
+    padding: 0;
     .shadow(10%);
 }
 
@@ -176,12 +177,10 @@ main{
     }// End Form
 }// End Contact
 
-footer{
-    background-color: @color_dark;
-    color: @color_light;
-    padding: 1rem;
-}
-
 section a.button{
     margin-left: 0;
+}
+
+footer{
+    position: relative;
 }

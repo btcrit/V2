@@ -1,36 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
-        <!-- M E T A -->
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name=”robots” content="index,follow">
         <meta name="description" content="
             We're a club at RIT that focuses on Blockchain Technology and other
             Decentralized Systems. We have weekly meetings, discuss bitcoin and
             other cryptocurrencies, and work on projects in our free time.
         ">
-        <!-- Load Resources -->
-        <link rel="stylesheet" href="/style.css">
-        <!-- <link rel="stylesheet" href="./css/button.css"> -->
+        <link rel="stylesheet" href="./style.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i|Roboto:400,700" rel="stylesheet">
-        <!-- Other Things -->
         <title>BTCRIT | Home</title>
     </head>
     <body>
-        <!-- Big, Static Header. -->
         <header>
-            <!-- Logo -->
-            <img src="./images/hamster-min-min.svg" alt="">
-            <!-- Name -->
+            <img src="./images/hamster-min.svg" alt="">
             <h1>
                 Blockchain Technology Club
             </h1>
             <hr>
-            <!-- Tagline -->
             <p>
                 <em>Decentralized Systems: Education and Implementation</em>
             </p>
-            <!-- Aparently no wrapper is needed here -->
             <a href="#contact" class="button b_accent">
                 Get Involved / Contact
             </a>
@@ -38,15 +30,14 @@
                 Current Meeting Sign-in
             </a>
         </header>
-        <!-- Curtain pulls up over the header -->
         <main>
-            <!-- Nav Bar, for Nav-ing. -->
             <nav>
                 <a href="/" class="active">Home</a>
                 <a href="/meetings/">Meetings</a>
-                <a href="/eboard">E-Board</a>
                 <a href="/resume">Club Resume</a>
+                <a href="/eboard">E-Board</a>
                 <a href="/local/">Local Crypto</a>
+                <a href="/#contact">Contact</a>
             </nav>
             <!-- Next Meeting -->
             <section id="nextmeeting">
@@ -134,19 +125,19 @@
                     </div>
                 </div>
             </section>
-            <footer>
-                <div class="notwide">
-                    <p>
-                        This is the website Footer. I feel very lazy and probably won't spend a lot of time on this.
-                    </p>
-                    <ul>
-                        <li>one</li>
-                        <li>two</li>
-                        <li>Three</li>
-                        <li>Extra LOOONG content.</li>
-                    </ul>
-                </div>
-            </footer>
         </main>
+        <footer>
+            <p>&copy; RIT's Blockchain Technology Club 2018</p>
+            <div class="flex" id="footernav">
+                <a href="/">Home</a>
+                <a href="/signin">Meeting Sign-In</a>
+                <a href="/meetings">Past/Future Meetings</a>
+                <a href="/resume">Club Resume and Projects</a>
+                <a href="/eboard/">Club Executive Board</a>
+                <a href="/local/">Blockchain in Rochester</a>
+                <a href="/mage/">Mage</a>
+                <a href="/#contact" id="contact">Contact</a>
+            </div>
+        </footer>
     </body>
 </html>
