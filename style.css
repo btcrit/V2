@@ -160,6 +160,14 @@ nav {
   justify-content: space-evenly;
   background-color: #1e1e1e;
   padding: 0.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+@media only screen and (max-width: 600px) {
+  nav {
+    position: static;
+  }
 }
 nav a {
   display: inline-block;
