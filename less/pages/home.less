@@ -45,7 +45,40 @@ header{
         width: 30rem;
         max-width: 50%;
         background-color: @color_light;
+        display: none;
+        @media @breakpoint{
+            display: block;
+        }
     }
+
+    .chaincontain{
+        display:flex;
+        justify-content: center;
+        @media @breakpoint{
+            display: none;
+        }
+        .chain{
+            display:flex;
+            align-items: center;
+            .v{
+                width: 32px;
+                border: 3px solid white;
+                height: 7px;
+                display: inline-block;
+                border-radius: 6px;
+            }
+            .h{
+                display:inline-block;
+                height: 1px;
+                background-color: white;
+                width: 32px;
+                border: 1px solid white;
+                margin: 0 -10px;
+                border-radius: 4px;
+            }
+        }
+    }
+
 
     p{
         font-size: 1.75rem;

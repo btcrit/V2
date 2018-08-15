@@ -139,6 +139,41 @@ header hr {
   width: 30rem;
   max-width: 50%;
   background-color: #FFFFFF;
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  header hr {
+    display: block;
+  }
+}
+header .chaincontain {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 600px) {
+  header .chaincontain {
+    display: none;
+  }
+}
+header .chaincontain .chain {
+  display: flex;
+  align-items: center;
+}
+header .chaincontain .chain .v {
+  width: 32px;
+  border: 3px solid white;
+  height: 7px;
+  display: inline-block;
+  border-radius: 6px;
+}
+header .chaincontain .chain .h {
+  display: inline-block;
+  height: 1px;
+  background-color: white;
+  width: 32px;
+  border: 1px solid white;
+  margin: 0 -10px;
+  border-radius: 4px;
 }
 header p {
   font-size: 1.75rem;
