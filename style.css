@@ -315,7 +315,6 @@ nav a:hover {
   text-decoration: none;
 }
 #contact {
-  padding-bottom: 3rem;
   position: relative;
   color: white;
 }
@@ -350,6 +349,7 @@ nav a:hover {
 }
 #contact .content {
   background-color: rgba(16, 102, 139, 0.8);
+  padding-bottom: 3rem;
 }
 #contact hr {
   width: 75%;
