@@ -357,36 +357,6 @@ nav a:hover {
 #contact a:not(.button) {
   color: #DD7C10;
 }
-#contact form {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: -1rem 0;
-}
-#contact form input {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  margin: 1rem;
-  padding: 1rem 2rem;
-  display: inline-block;
-  transition: color 0.25s ease, background-color 0.25s ease;
-  letter-spacing: 0.5px;
-  border-radius: 0.3em;
-  border: 0.15em solid #1e1e1e;
-  background-color: #FFFFFF;
-  color: #1e1e1e;
-  box-shadow: 0px 0px 16px 0px rgba(30, 30, 30, 0.1);
-  font-weight: 400;
-  font-size: 1rem;
-}
-#contact form input:focus {
-  box-shadow: 0px 0px 16px 0px rgba(30, 30, 30, 0.2);
-  outline: none;
-}
-#contact form button {
-  font-size: 1rem;
-}
 section a.button {
   margin-left: 0;
 }
