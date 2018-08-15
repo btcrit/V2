@@ -130,6 +130,9 @@ nav a.active {
 nav a:hover {
   border-bottom: 1px solid #FFFFFF;
 }
+nav .unpublished {
+  display: none;
+}
 footer {
   background-color: #1e1e1e;
   padding: 0.5rem 0;

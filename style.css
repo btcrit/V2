@@ -219,6 +219,9 @@ nav a.active {
 nav a:hover {
   border-bottom: 1px solid #FFFFFF;
 }
+nav .unpublished {
+  display: none;
+}
 .bg {
   position: absolute;
   width: 100%;
