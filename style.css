@@ -315,6 +315,7 @@ nav a:hover {
   text-decoration: none;
 }
 #contact {
+  padding-bottom: 3rem;
   position: relative;
   color: white;
 }
@@ -356,6 +357,9 @@ nav a:hover {
 }
 #contact a:not(.button) {
   color: #DD7C10;
+}
+#contact a.button {
+  margin: 0 1rem 0 0;
 }
 section a.button {
   margin-left: 0;
