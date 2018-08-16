@@ -15,6 +15,7 @@ header{
     }
 
     // Background
+    background-color: @color_base;
     background-image: url("../images/bg-geometric.jpg");
     background-size: cover;
     background-position: center;
@@ -120,6 +121,7 @@ main{
 
     .bg{
         // background-image: url("../images/bg-aud.jpg");
+        background-color: @color_accent;
         .bg-aud();
     }
 
@@ -170,11 +172,13 @@ main{
 
     .bg{
         //background-image: url("../images/bg-swoosh.jpg");
+        background-color: @color_base;
         .bg-swoosh();
     }
 
     .content{
         background-color: fade(@color_base, 80%);
+        padding-bottom: 3rem;
     }
 
     hr{
@@ -186,29 +190,37 @@ main{
         color: @color_accent;
     }
 
-    form{
-        .flex();
-        justify-content: center;
-        margin: -1rem 0;
+    // This was used way back before we directed to an external signup form.
+    // form{
+    //     .flex();
+    //     justify-content: center;
+    //     margin: -1rem 0;
+    //
+    //     input{
+    //         .button();
+    //         .b_dark();
+    //         .shadow(10%);
+    //         font-weight: 400;
+    //         font-size: 1rem;
+    //     }
+    //
+    //     input:focus{
+    //         .shadow(20%);
+    //         outline: none;
+    //     }
+    //
+    //     button{
+    //         font-size: 1rem;
+    //     }
+    // }// End Form
 
-        input{
-            .button();
-            .b_dark();
-            .shadow(10%);
-            font-weight: 400;
-            font-size: 1rem;
-        }
+    a.button{
+        margin: 0 1rem 0 0;
+    }
 
-        input:focus{
-            .shadow(20%);
-            outline: none;
-        }
-
-        button{
-            font-size: 1rem;
-        }
-    }// End Form
 }// End Contact
+
+
 
 section a.button{
     margin-left: 0;

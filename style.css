@@ -105,6 +105,7 @@ footer p {
 header {
   position: sticky;
   top: 0;
+  background-color: #10668B;
   background-image: url("../images/bg-geometric.jpg");
   background-size: cover;
   background-position: center;
@@ -238,6 +239,7 @@ nav .unpublished {
   box-shadow: 0px 0px 16px 0px rgba(30, 30, 30, 0.1);
 }
 #nextmeeting .bg {
+  background-color: #DD7C10;
   background-image: url("/images/bg-aud/bg-aud-903.jpg");
 }
 @media only screen and (min-width: 904px) {
@@ -320,6 +322,7 @@ nav .unpublished {
   color: white;
 }
 #contact .bg {
+  background-color: #10668B;
   background-image: url("/images/bg-swoosh/bg-swoosh-925.jpg");
 }
 @media only screen and (min-width: 926px) {
@@ -349,6 +352,7 @@ nav .unpublished {
 }
 #contact .content {
   background-color: rgba(16, 102, 139, 0.8);
+  padding-bottom: 3rem;
 }
 #contact hr {
   width: 75%;
@@ -357,35 +361,8 @@ nav .unpublished {
 #contact a:not(.button) {
   color: #DD7C10;
 }
-#contact form {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: -1rem 0;
-}
-#contact form input {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  margin: 1rem;
-  padding: 1rem 2rem;
-  display: inline-block;
-  transition: color 0.25s ease, background-color 0.25s ease;
-  letter-spacing: 0.5px;
-  border-radius: 0.3em;
-  border: 0.15em solid #1e1e1e;
-  background-color: #FFFFFF;
-  color: #1e1e1e;
-  box-shadow: 0px 0px 16px 0px rgba(30, 30, 30, 0.1);
-  font-weight: 400;
-  font-size: 1rem;
-}
-#contact form input:focus {
-  box-shadow: 0px 0px 16px 0px rgba(30, 30, 30, 0.2);
-  outline: none;
-}
-#contact form button {
-  font-size: 1rem;
+#contact a.button {
+  margin: 0 1rem 0 0;
 }
 section a.button {
   margin-left: 0;
