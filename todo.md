@@ -1,0 +1,2 @@
+- Change black buttons to #502100
+- Drop button border-radius to 0.2em from 0.3
