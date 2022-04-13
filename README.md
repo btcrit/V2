@@ -1,6 +1,10 @@
 # v2
 btcrit.com's website is being built in two phases. Phase one has been completed. This is phase two.
 
+## Wiki
+More freuqent updates, including previous meeting information and club resources, can be found at our wiki:
+https://wiki.btcrit.com
+
 ### Pages and Content
 - Home Page
     - Call To Action
